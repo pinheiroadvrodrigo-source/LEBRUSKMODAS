@@ -182,6 +182,43 @@ header.site.scrolled{box-shadow:0 10px 30px -22px rgba(0,0,0,.4)}
 .edit-sw i{width:20px;height:20px;border-radius:50%;display:block;border:1px solid rgba(255,255,255,.6)}
 .ws-photos{display:grid;grid-template-columns:1.2fr 1fr;gap:12px;margin:30px 0 0}
 .ws-photos img{width:100%;height:170px;object-fit:cover;border-radius:14px;opacity:.95}
+/* Lead form (topo) */
+.lead{position:relative;z-index:5;margin-top:-50px;padding-bottom:30px}
+.lead-card{background:linear-gradient(135deg,var(--wine-d),var(--wine) 55%,#A3305A);color:#fff;border-radius:26px;padding:34px 36px;box-shadow:0 30px 70px -30px rgba(78,16,40,.9);position:relative;overflow:hidden}
+.lead-card:before{content:"";position:absolute;right:-80px;top:-80px;width:260px;height:260px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.16),transparent 65%)}
+.lead-head{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap;margin-bottom:20px;position:relative}
+.lead-head .eyebrow{color:var(--rose-soft)}
+.lead-head h2{font-family:var(--serif);font-weight:500;font-size:clamp(1.8rem,3.4vw,2.6rem);line-height:1.05;margin-top:6px}
+.lead-head h2 em{color:#FFD3DE}
+.lead-head p{opacity:.85;font-weight:300;font-size:.95rem;max-width:360px}
+.lead-opts{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:16px;position:relative}
+.lead-opt{display:flex;align-items:center;gap:12px;padding:16px 18px;border-radius:16px;background:rgba(255,255,255,.1);border:2px solid rgba(255,255,255,.22);color:#fff;text-align:left;transition:all .3s cubic-bezier(.2,.7,.2,1)}
+.lead-opt:hover{background:rgba(255,255,255,.18);transform:translateY(-3px)}
+.lead-opt i{width:46px;height:46px;border-radius:14px;background:#fff;color:var(--wine);display:grid;place-items:center;flex:none;font-style:normal;font-size:1.35rem;transition:transform .3s}
+.lead-opt b{display:block;font-size:.98rem;font-weight:600;line-height:1.15}
+.lead-opt small{display:block;font-size:.74rem;opacity:.8}
+.lead-opt.on{background:#fff;color:var(--wine-d);border-color:#fff;box-shadow:0 14px 30px -14px rgba(0,0,0,.6);transform:translateY(-3px)}
+.lead-opt.on i{background:var(--wine);color:#fff;transform:scale(1.08)}
+.lead-opt.on small{opacity:.7}
+.lead-opts.err .lead-opt{border-color:#FFB3C4;animation:shake .4s}
+@keyframes shake{25%{transform:translateX(-5px)}75%{transform:translateX(5px)}}
+.lead-row{display:grid;grid-template-columns:1.1fr 1fr 1fr auto;gap:12px;position:relative}
+.lead-row input{width:100%;border:2px solid transparent;background:#fff;color:var(--ink);border-radius:14px;padding:16px 18px;font-size:.95rem;outline:none;transition:border .2s}
+.lead-row input:focus{border-color:#FFB3C4}
+.lead-row input::placeholder{color:#9A8A8D}
+.lead-cta{position:relative;overflow:hidden;display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 28px;border-radius:14px;background:linear-gradient(135deg,#2BD566,#13A34A);color:#fff;font-weight:600;font-size:.86rem;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;box-shadow:0 14px 30px -12px rgba(19,163,74,.9);animation:ctaPulse 2.2s ease-in-out infinite}
+.lead-cta svg{width:22px;height:22px}
+.lead-cta:before{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.6),transparent);transform:skewX(-20deg);animation:shine 2.8s ease-in-out infinite}
+.lead-cta:hover{transform:translateY(-2px) scale(1.02)}
+@keyframes ctaPulse{0%,100%{box-shadow:0 14px 30px -12px rgba(19,163,74,.9),0 0 0 0 rgba(43,213,102,.5)}50%{box-shadow:0 14px 30px -12px rgba(19,163,74,.9),0 0 0 10px rgba(43,213,102,0)}}
+.lead-foot{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-top:12px;font-size:.76rem;opacity:.85;position:relative}
+.lead-foot label{display:flex;gap:8px;align-items:center}
+.lead-foot input{accent-color:#2BD566;width:16px;height:16px}
+.lead-foot a{text-decoration:underline}
+#l-out{margin-top:12px}
+#l-out.ok{background:#E9F7EE;color:#1B6B3A}#l-out.err{background:#FFE8EE;color:var(--wine)}
+@media (max-width:980px){.lead-row{grid-template-columns:1fr 1fr}.lead-cta{grid-column:1/-1}}
+@media (max-width:620px){.lead{margin-top:-30px}.lead-card{padding:26px 18px;border-radius:22px}.lead-opts{grid-template-columns:1fr;gap:10px}.lead-opt{padding:12px 14px}.lead-opt i{width:40px;height:40px}.lead-row{grid-template-columns:1fr}.lead-cta{padding:18px}}
 /* Shop */
 .shop{background:#fff}
 .shop-layout{display:grid;grid-template-columns:250px 1fr;gap:40px;align-items:start}
@@ -637,6 +674,34 @@ textarea.code{font-family:ui-monospace,monospace;font-size:.76rem;min-height:160
       <div class="hero-ring" aria-hidden="true"></div>
       <div class="hero-frame"><img class="hs on" src="img/hero-modelo.webp" alt="Modelo vestindo conjunto de lingerie em renda vinho LE-BRUSK" fetchpriority="high"><img class="hs" src="img/modelo-vinho.webp" alt="Modelo vestindo conjunto LE-BRUSK em renda vinho com tule" loading="lazy" style="object-position:center 12%"></div>
       <div class="hero-tag"><i><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z"/></svg></i><div><b>Renda &amp; detalhes</b><small>Nova coleção</small></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FORMULÁRIO RÁPIDO -->
+<section class="lead" id="formulario">
+  <div class="container">
+    <div class="lead-card">
+      <div class="lead-head">
+        <div><span class="eyebrow">Atendimento rápido</span><h2>Como podemos <em>te ajudar?</em></h2></div>
+        <p>Escolha uma opção, deixe seu nome e WhatsApp e fale com a nossa equipe na hora.</p>
+      </div>
+      <form id="formLead" novalidate>
+        <div class="lead-opts" id="leadOpts" role="radiogroup" aria-label="O que você procura?">
+          <button type="button" class="lead-opt on" data-v="Quero comprar peças" role="radio" aria-checked="true"><i>🛍️</i><span><b>Quero comprar</b><small>Peças para mim</small></span></button>
+          <button type="button" class="lead-opt" data-v="Quero comprar no atacado" role="radio" aria-checked="false"><i>📦</i><span><b>Atacado</b><small>Para minha loja</small></span></button>
+          <button type="button" class="lead-opt" data-v="Quero ser revendedora/consultora" role="radio" aria-checked="false"><i>💖</i><span><b>Ser revendedora</b><small>Renda extra</small></span></button>
+        </div>
+        <input type="hidden" name="tipo" value="Quero comprar peças" required>
+        <div class="lead-row">
+          <input name="nome" placeholder="Seu nome *" required autocomplete="name" aria-label="Seu nome">
+          <input name="tel" placeholder="WhatsApp com DDD *" required inputmode="tel" autocomplete="tel" aria-label="WhatsApp">
+          <input name="cidade" placeholder="Cidade / UF" aria-label="Cidade e estado">
+          <button class="lead-cta" type="submit"><svg viewBox="0 0 24 24" fill="currentColor"><use href="#i-wa"/></svg>Enviar agora</button>
+        </div>
+        <div class="lead-foot"><label><input type="checkbox" required checked><span>Autorizo o contato pelo WhatsApp (<a href="#privacidade">privacidade</a>)</span></label><span>⚡ Resposta rápida da nossa equipe</span></div>
+        <div class="form-msg" id="l-out"></div>
+      </form>
     </div>
   </div>
 </section>
@@ -1661,6 +1726,8 @@ function bind(){
   $("#quickReplies").innerHTML=QUICK.map(function(q){return '<button type="button">'+q+'</button>'}).join("");
   $$("#quickReplies button").forEach(function(b){b.onclick=function(){ask(b.textContent)}});
   $("#chatForm").onsubmit=function(e){e.preventDefault();var t=$("#chatInput").value.trim();if(!t)return;$("#chatInput").value="";ask(t)};
+  $$("#leadOpts .lead-opt").forEach(function(b){b.onclick=function(){$$("#leadOpts .lead-opt").forEach(function(x){x.classList.remove("on");x.setAttribute("aria-checked","false")});b.classList.add("on");b.setAttribute("aria-checked","true");$("#formLead [name=tipo]").value=b.dataset.v;$("#leadOpts").classList.remove("err")}});
+  bindForm("#formLead","#l-out",function(f){return "Olá! Vim pelo site da LE-BRUSK.\n\n"+v(f,"tipo")+"\nNome: "+v(f,"nome")+"\nWhatsApp: "+v(f,"tel")+(v(f,"cidade")?"\nCidade: "+v(f,"cidade"):"")});
   // forms
   bindForm("#formAtacado","#a-out",function(f){return "Olá! Tenho interesse em comprar no ATACADO da LE-BRUSK.\n\nNome: "+v(f,"nome")+(v(f,"loja")?"\nLoja: "+v(f,"loja"):"")+"\nCidade/UF: "+v(f,"cidade")+"\nWhatsApp: "+v(f,"tel")+"\nInteresse: "+v(f,"tipo")+(v(f,"msg")?"\nMensagem: "+v(f,"msg"):"")});
   bindForm("#formRep","#r-out",function(f){return "Olá! Quero fazer parte da equipe comercial da LE-BRUSK.\n\nNome: "+v(f,"nome")+"\nCidade/UF: "+v(f,"cidade")+"\nWhatsApp: "+v(f,"tel")+"\nInteresse: "+v(f,"tipo")+"\nJá trabalha com vendas: "+v(f,"exp")+(v(f,"msg")?"\nMensagem: "+v(f,"msg"):"")});
