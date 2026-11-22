@@ -183,7 +183,7 @@ header.site.scrolled{box-shadow:0 10px 30px -22px rgba(0,0,0,.4)}
 .ws-photos{display:grid;grid-template-columns:1.2fr 1fr;gap:12px;margin:30px 0 0}
 .ws-photos img{width:100%;height:170px;object-fit:cover;border-radius:14px;opacity:.95}
 /* Lead form (topo) */
-.lead{position:relative;z-index:5;margin-top:-50px;padding-bottom:30px}
+.lead{position:relative;z-index:5;padding:22px 0 26px;background:linear-gradient(180deg,var(--cream),var(--nude))}
 .lead-card{background:linear-gradient(135deg,var(--wine-d),var(--wine) 55%,#A3305A);color:#fff;border-radius:26px;padding:34px 36px;box-shadow:0 30px 70px -30px rgba(78,16,40,.9);position:relative;overflow:hidden}
 .lead-card:before{content:"";position:absolute;right:-80px;top:-80px;width:260px;height:260px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.16),transparent 65%)}
 .lead-head{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap;margin-bottom:20px;position:relative}
@@ -218,7 +218,7 @@ header.site.scrolled{box-shadow:0 10px 30px -22px rgba(0,0,0,.4)}
 #l-out{margin-top:12px}
 #l-out.ok{background:#E9F7EE;color:#1B6B3A}#l-out.err{background:#FFE8EE;color:var(--wine)}
 @media (max-width:980px){.lead-row{grid-template-columns:1fr 1fr}.lead-cta{grid-column:1/-1}}
-@media (max-width:620px){.lead{margin-top:-30px}.lead-card{padding:26px 18px;border-radius:22px}.lead-opts{grid-template-columns:1fr;gap:10px}.lead-opt{padding:12px 14px}.lead-opt i{width:40px;height:40px}.lead-row{grid-template-columns:1fr}.lead-cta{padding:18px}}
+@media (max-width:620px){.lead{padding:14px 0 18px}.lead-card{padding:26px 18px;border-radius:22px}.lead-opts{grid-template-columns:1fr;gap:10px}.lead-opt{padding:12px 14px}.lead-opt i{width:40px;height:40px}.lead-row{grid-template-columns:1fr}.lead-cta{padding:18px}}
 /* Shop */
 .shop{background:#fff}
 .shop-layout{display:grid;grid-template-columns:250px 1fr;gap:40px;align-items:start}
@@ -653,31 +653,6 @@ textarea.code{font-family:ui-monospace,monospace;font-size:.76rem;min-height:160
 </aside>
 
 <main>
-<!-- HERO -->
-<section class="hero" id="inicio">
-  <div class="container hero-grid">
-    <div class="hero-copy">
-      <span class="eyebrow">Coleção LE-BRUSK · Moda íntima feminina</span>
-      <h1>Beleza, conforto e <em>elegância</em> em cada detalhe.</h1>
-      <p class="sub">Descubra uma coleção criada para valorizar a beleza feminina, com peças que unem estilo, qualidade e conforto.</p>
-      <div class="ctas">
-        <a href="#colecoes" class="btn btn-wine">Conheça nossa coleção</a>
-        <a class="btn btn-ghost" data-wa="geral" target="_blank" rel="noopener">Fale com a gente</a>
-      </div>
-      <div class="hero-trust">
-        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M12 21s-7-4.5-9.3-9A5.3 5.3 0 0 1 12 6a5.3 5.3 0 0 1 9.3 6C19 16.5 12 21 12 21Z"/></svg>Feita para você</div>
-        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M4 5h16v11H8l-4 4V5Z"/></svg>Atendimento humano</div>
-        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M3 9l2-5h14l2 5M3 9v11h18V9M3 9h18M9 20v-6h6v6"/></svg>Atacado e revenda</div>
-      </div>
-    </div>
-    <div class="hero-visual">
-      <div class="hero-ring" aria-hidden="true"></div>
-      <div class="hero-frame"><img class="hs on" src="img/hero-modelo.webp" alt="Modelo vestindo conjunto de lingerie em renda vinho LE-BRUSK" fetchpriority="high"><img class="hs" src="img/modelo-vinho.webp" alt="Modelo vestindo conjunto LE-BRUSK em renda vinho com tule" loading="lazy" style="object-position:center 12%"></div>
-      <div class="hero-tag"><i><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z"/></svg></i><div><b>Renda &amp; detalhes</b><small>Nova coleção</small></div></div>
-    </div>
-  </div>
-</section>
-
 <!-- FORMULÁRIO RÁPIDO -->
 <section class="lead" id="formulario">
   <div class="container">
@@ -702,6 +677,31 @@ textarea.code{font-family:ui-monospace,monospace;font-size:.76rem;min-height:160
         <div class="lead-foot"><label><input type="checkbox" required checked><span>Autorizo o contato pelo WhatsApp (<a href="#privacidade">privacidade</a>)</span></label><span>⚡ Resposta rápida da nossa equipe</span></div>
         <div class="form-msg" id="l-out"></div>
       </form>
+    </div>
+  </div>
+</section>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow">Coleção LE-BRUSK · Moda íntima feminina</span>
+      <h1>Beleza, conforto e <em>elegância</em> em cada detalhe.</h1>
+      <p class="sub">Descubra uma coleção criada para valorizar a beleza feminina, com peças que unem estilo, qualidade e conforto.</p>
+      <div class="ctas">
+        <a href="#colecoes" class="btn btn-wine">Conheça nossa coleção</a>
+        <a class="btn btn-ghost" data-wa="geral" target="_blank" rel="noopener">Fale com a gente</a>
+      </div>
+      <div class="hero-trust">
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M12 21s-7-4.5-9.3-9A5.3 5.3 0 0 1 12 6a5.3 5.3 0 0 1 9.3 6C19 16.5 12 21 12 21Z"/></svg>Feita para você</div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M4 5h16v11H8l-4 4V5Z"/></svg>Atendimento humano</div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M3 9l2-5h14l2 5M3 9v11h18V9M3 9h18M9 20v-6h6v6"/></svg>Atacado e revenda</div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-ring" aria-hidden="true"></div>
+      <div class="hero-frame"><img class="hs on" src="img/hero-modelo.webp" alt="Modelo vestindo conjunto de lingerie em renda vinho LE-BRUSK" fetchpriority="high"><img class="hs" src="img/modelo-vinho.webp" alt="Modelo vestindo conjunto LE-BRUSK em renda vinho com tule" loading="lazy" style="object-position:center 12%"></div>
+      <div class="hero-tag"><i><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z"/></svg></i><div><b>Renda &amp; detalhes</b><small>Nova coleção</small></div></div>
     </div>
   </div>
 </section>
