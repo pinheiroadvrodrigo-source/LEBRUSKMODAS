@@ -1,0 +1,247 @@
+{
+ "config": {
+  "storeWhatsApp": "5591991198584",
+  "storeWhatsAppLabel": "(91) 99119-8584",
+  "waMessage": "Olá! Conheci o site da LE-BRUSK Moda Íntima e gostaria de mais informações sobre os produtos.",
+  "devWhatsApp": "5591991198584",
+  "devMessage": "Olá, Rodrigo! Conheci seu trabalho através do site da LE-BRUSK e gostaria de criar um site profissional para minha empresa.",
+  "instagramUser": "",
+  "aboutText": "A LE-BRUSK trabalha com moda íntima, oferecendo opções para quem busca beleza, conforto e estilo. Conheça nossas coleções e descubra peças pensadas para diferentes momentos e preferências.",
+  "aboutStory": "",
+  "consultoraBenefits": [
+   "Sem investimento",
+   "Prazo de 60 dias",
+   "Trocas ilimitadas",
+   "Lucre até 100%",
+   "Trabalhe em casa"
+  ],
+  "exchangePolicy": "",
+  "gaId": "",
+  "metaPixelId": "",
+  "companyId": ""
+ },
+ "products": [
+  {
+   "id": "r1",
+   "slug": "conjunto-tomara-que-caia-renda",
+   "name": "Conjunto Tomara que Caia com Renda",
+   "category": "conjuntos",
+   "price": null,
+   "sizes": [
+    "P",
+    "M",
+    "G",
+    "GG"
+   ],
+   "colors": [
+    "Roxo",
+    "Malva",
+    "Chocolate"
+   ],
+   "stock": null,
+   "images": [
+    "img/tqc-roxo.webp",
+    "img/tqc-malva.webp",
+    "img/tqc-chocolate.webp"
+   ],
+   "colorImages": {
+    "Roxo": "img/tqc-roxo.webp",
+    "Malva": "img/tqc-malva.webp",
+    "Chocolate": "img/tqc-chocolate.webp"
+   },
+   "description": "Sutiã tomara que caia com detalhes em renda e calcinha com renda nas laterais. Cores: roxo, malva e chocolate.",
+   "demo": false,
+   "isNew": true,
+   "active": true,
+   "created": 30
+  },
+  {
+   "id": "r2",
+   "slug": "conjunto-renda-floral",
+   "name": "Conjunto em Renda Floral",
+   "category": "conjuntos",
+   "price": null,
+   "sizes": [
+    "P",
+    "M",
+    "G",
+    "GG"
+   ],
+   "colors": [
+    "Vinho",
+    "Preto",
+    "Rosé"
+   ],
+   "stock": null,
+   "images": [
+    "img/renda-vinho.webp",
+    "img/renda-preto.webp",
+    "img/renda-rose.webp",
+    "img/colecao-renda.webp"
+   ],
+   "colorImages": {
+    "Vinho": "img/renda-vinho.webp",
+    "Preto": "img/renda-preto.webp",
+    "Rosé": "img/renda-rose.webp"
+   },
+   "description": "Conjunto em renda floral com laço e pingente de coração. Cores: vinho, preto e rosé.",
+   "demo": false,
+   "isNew": true,
+   "active": true,
+   "created": 29
+  },
+  {
+   "id": "r3",
+   "slug": "conjunto-renda-vinho-tule",
+   "name": "Conjunto Renda Vinho com Tule",
+   "category": "conjuntos",
+   "price": null,
+   "sizes": [
+    "P",
+    "M",
+    "G",
+    "GG"
+   ],
+   "colors": [
+    "Vinho"
+   ],
+   "stock": null,
+   "images": [
+    "img/modelo-vinho.webp"
+   ],
+   "description": "Conjunto vinho em renda com detalhes em tule e laço com pingente.",
+   "demo": false,
+   "isNew": false,
+   "active": true,
+   "created": 28
+  },
+  {
+   "id": "p2",
+   "slug": "sutia-renda-exemplo",
+   "name": "Sutiã em Renda com Laço",
+   "category": "sutias",
+   "price": null,
+   "sizes": [
+    "P",
+    "M",
+    "G"
+   ],
+   "colors": [
+    "Vinho",
+    "Preto"
+   ],
+   "stock": null,
+   "images": [
+    "img/cat-sutias.webp"
+   ],
+   "description": "Produto demonstrativo para apresentação do layout.",
+   "demo": true,
+   "isNew": false,
+   "active": true,
+   "created": 5
+  },
+  {
+   "id": "p3",
+   "slug": "calcinha-renda-exemplo",
+   "name": "Calcinha em Renda",
+   "category": "calcinhas",
+   "price": null,
+   "sizes": [
+    "P",
+    "M",
+    "G",
+    "GG"
+   ],
+   "colors": [
+    "Vinho",
+    "Nude"
+   ],
+   "stock": null,
+   "images": [
+    "img/cat-calcinhas.webp"
+   ],
+   "description": "Produto demonstrativo para apresentação do layout.",
+   "demo": true,
+   "isNew": false,
+   "active": true,
+   "created": 4
+  },
+  {
+   "id": "p4",
+   "slug": "camisola-exemplo",
+   "name": "Camisola Acetinada",
+   "category": "camisolas",
+   "price": null,
+   "sizes": [
+    "P",
+    "M",
+    "G"
+   ],
+   "colors": [
+    "Rosé",
+    "Preto"
+   ],
+   "stock": null,
+   "images": [
+    "svg:camisola"
+   ],
+   "description": "Produto demonstrativo para apresentação do layout.",
+   "demo": true,
+   "isNew": false,
+   "active": true,
+   "created": 3
+  },
+  {
+   "id": "p5",
+   "slug": "pijama-exemplo",
+   "name": "Pijama Curto",
+   "category": "pijamas",
+   "price": null,
+   "sizes": [
+    "P",
+    "M",
+    "G",
+    "GG"
+   ],
+   "colors": [
+    "Rosé",
+    "Bege"
+   ],
+   "stock": null,
+   "images": [
+    "svg:pijama"
+   ],
+   "description": "Produto demonstrativo para apresentação do layout.",
+   "demo": true,
+   "isNew": false,
+   "active": true,
+   "created": 2
+  },
+  {
+   "id": "p6",
+   "slug": "body-renda-exemplo",
+   "name": "Body Rendado",
+   "category": "moda-intima",
+   "price": null,
+   "sizes": [
+    "P",
+    "M",
+    "G"
+   ],
+   "colors": [
+    "Preto",
+    "Vinho"
+   ],
+   "stock": null,
+   "images": [
+    "svg:body"
+   ],
+   "description": "Produto demonstrativo para apresentação do layout.",
+   "demo": true,
+   "isNew": false,
+   "active": true,
+   "created": 1
+  }
+ ],
+ "testimonials": []
+}
